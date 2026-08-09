@@ -19,3 +19,16 @@ chercher les horaires d'écluses.
 
 Pour la mettre à jour : corriger le texte dans l'app, relancer le script,
 recopier le résultat ici.
+
+## `/maj/v1/` — le canal de mise à jour
+
+Ce que l'application va chercher pour rafraîchir les horaires d'écluses et de portes :
+`manifeste.json`, ses `horaires-<n>.json`, et une signature Ed25519 par fichier.
+
+⚠️ **`.nojekyll` À LA RACINE EST OBLIGATOIRE.** Sans lui, GitHub Pages fait passer le dépôt par
+Jekyll, qui ignore certains fichiers et peut en réécrire d'autres. Un octet réécrit dans un
+`.json` invalide sa signature, et l'application refuse alors **toutes** les mises à jour — en
+silence, puisque c'est exactement le comportement voulu face à un fichier falsifié.
+
+Le contenu ne s'édite pas ici : il est produit et signé par `Outils/mise-a-jour/publier.py`
+dans le dépôt principal, puis poussé par `televerser.py`.
