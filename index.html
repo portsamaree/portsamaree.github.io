@@ -1,0 +1,110 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ports à marée — Confidentialité / Privacy</title>
+<style>
+  :root {
+    --encre: #17324a;
+    --attenue: #5d7385;
+    --eau: #1d7ea8;
+    --fond: #f7f9fa;
+    --carte: #ffffff;
+    --bord: #dfe7ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --encre: #e8eef2; --attenue: #9db0bd; --eau: #6cc4e8;
+      --fond: #11202c; --carte: #172936; --bord: #26414f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.2rem 1.2rem 4rem;
+    background: var(--fond); color: var(--encre);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .3rem; }
+  .sous { color: var(--attenue); margin: 0 0 1.8rem; font-size: .95rem; }
+  .resume {
+    background: var(--carte); border: 1px solid var(--bord); border-left: 4px solid var(--eau);
+    border-radius: 10px; padding: 1rem 1.1rem; margin: 0 0 2rem; font-weight: 600;
+  }
+  h2 { font-size: 1.05rem; margin: 2.1rem 0 .5rem; }
+  p { margin: .5rem 0; }
+  .langue {
+    margin: 3rem 0 0; padding-top: 1.6rem; border-top: 1px solid var(--bord);
+  }
+  footer { margin-top: 2.6rem; color: var(--attenue); font-size: .85rem; }
+  a { color: var(--eau); }
+  code { font-size: .9em; }
+</style>
+
+<main>
+
+<h1>Ports à marée — Politique de confidentialité</h1>
+<p class="sous">Application iOS · calcul des heures de franchissement des écluses, portes et seuils</p>
+
+<p class="resume">Ports à marée ne collecte aucune donnée personnelle, n'en transmet aucune, et n'a pas de compte à créer.</p>
+
+
+<h2>Ce que l'application ne fait pas</h2>
+<p>Elle ne crée pas de compte, ne demande pas d'identifiant, ne pose pas de traceur, n'embarque aucun outil de mesure d'audience ni aucune bibliothèque publicitaire. Tous les calculs de marée se font sur l'appareil, à partir de données incluses dans l'application : aucune marée n'est téléchargée, et l'application reste entièrement utilisable hors réseau. C'est ainsi qu'elle a été conçue — pour servir au mouillage, là où il n'y a pas de couverture. Elle sait en revanche aller chercher les horaires d'écluses et de portes quand ils changent : voir ci-dessous.</p>
+<h2>Les horaires d'écluses et de portes</h2>
+<p>C'est la seule chose que l'application télécharge, et il faut le dire précisément : les marées sont calculées à bord et ne viennent jamais du réseau, mais les horaires publiés par les ports changent — un calendrier annuel s'arrête au 31 décembre, un gestionnaire corrige une plage en cours de saison. L'application va donc chercher ces horaires sur notre serveur, au plus une fois par jour, et seulement s'il y a du neuf.</p>
+<p>Cet échange ne va que dans un sens : elle DEMANDE un fichier, elle n'envoie rien. Aucun identifiant, aucun réglage, aucune position, aucune liste de ports suivis ne part avec la requête — c'est un simple téléchargement, comme celui d'une page web, et notre serveur n'a aucun moyen de savoir qui l'a demandé au-delà de ce que tout serveur voit passer.</p>
+<p>Chaque fichier est signé. L'application vérifie la signature avant d'en tenir compte et refuse tout ce qui ne vient pas de nous, même si le serveur était compromis. Et si vous ne l'installez jamais, rien ne se dégrade : les horaires embarqués restent, et la fiche de chaque port dit jusqu'à quelle date ils valent.</p>
+<h2>La position</h2>
+<p>Si vous l'y autorisez, l'application relève votre position pour deux usages, et deux seulement : vous proposer le port le plus proche au premier lancement, et classer les points de calcul de marée par distance. Le relevé est ponctuel, jamais un suivi. La position n'est ni enregistrée, ni transmise, ni jointe à quoi que ce soit : elle sert à comparer des distances, puis elle est oubliée. Refuser l'accès ne retire aucune fonction — il suffit alors de choisir ses ports à la main.</p>
+<h2>La carte</h2>
+<p>L'onglet carte affiche un fond de plan Apple. Afficher une carte suppose que les tuiles soient servies par Apple, donc que l'appareil s'adresse à Apple pour les obtenir, comme dans l'application Plans. C'est le seul échange réseau qui puisse avoir lieu ; il n'est pas à notre initiative et relève de la politique de confidentialité d'Apple. Les quatre autres onglets fonctionnent sans réseau.</p>
+<h2>Vos réglages</h2>
+<p>Tirant d'eau, pied de pilote, ports suivis, sonde, favoris : ces réglages restent sur l'appareil, dans l'espace privé de l'application. Ils ne sont pas synchronisés et ne quittent pas le téléphone. Supprimer l'application les supprime.</p>
+<h2>Publicité et profilage</h2>
+<p>Aucune publicité, aucun achat, aucun contenu de tiers. L'application ne distingue pas ses utilisateurs et n'a donc aucun moyen de profiler qui que ce soit.</p>
+<h2>Sources des données</h2>
+<p>Les hauteurs de marée sont recalculées à partir des observations du réseau marégraphique diffusées par le Shom sous Licence Ouverte Etalab 2.0. Les règles et horaires d'ouverture des ouvrages viennent des documents publiés par les gestionnaires de ports, cités port par port dans l'application. Le fond de carte est fourni par Apple Plans.</p>
+<h2>Avertissement</h2>
+<p>L'application est une aide à la préparation, pas un document nautique. Elle ne remplace ni les cartes, ni les instructions nautiques, ni les avis aux navigateurs, et son usage relève de la seule responsabilité de son utilisateur.</p>
+<h2>Contact</h2>
+<p>Pour toute question sur ce texte, écrire à <a href="mailto:portsamaree.app@gmail.com">portsamaree.app@gmail.com</a>.</p>
+
+
+<div class="langue">
+
+<h1>Ports à marée — Privacy Policy</h1>
+<p class="sous">iOS app · lock, gate and sill access times for tidal harbours</p>
+
+<p class="resume">Ports à marée collects no personal data, transmits none, and has no account to create.</p>
+
+
+<h2>What the app does not do</h2>
+<p>It creates no account, asks for no identifier, sets no tracker, and contains no analytics framework and no advertising library. Every tide calculation runs on the device, from data bundled inside the app: no tide is ever downloaded, and the app remains fully usable offline. That is how it was designed — to be useful at anchor, where there is no coverage. It can, however, fetch lock and gate opening times when they change: see below.</p>
+<h2>Lock and gate opening times</h2>
+<p>This is the only thing the app downloads, and it deserves to be stated precisely: tides are computed on board and never come from the network, but the opening times published by harbour authorities do change — an annual calendar stops on 31 December, a harbour master corrects a slot mid-season. The app therefore fetches those times from our server, at most once a day, and only if there is something new.</p>
+<p>The exchange goes one way only: it REQUESTS a file, it sends nothing. No identifier, no setting, no position and no list of followed harbours leaves with the request — it is a plain download, like fetching a web page, and our server has no way of knowing who asked beyond what any server sees.</p>
+<p>Every file is signed. The app checks the signature before acting on it and rejects anything that does not come from us, even if the server were compromised. And if you never install one, nothing degrades: the bundled times remain, and each harbour's page states the date until which they hold.</p>
+<h2>Location</h2>
+<p>With your permission, the app reads your position for two purposes only: to suggest the nearest harbour on first launch, and to sort tide reference points by distance. The reading is a one-off, never a track. The position is not stored, not transmitted and not attached to anything: it is used to compare distances, then forgotten. Declining removes no feature — you simply pick your harbours by hand.</p>
+<h2>The map</h2>
+<p>The map tab shows an Apple Maps base layer. Displaying a map means Apple serves the tiles, so your device contacts Apple to obtain them, exactly as in the Maps app. That is the only network exchange that can occur; it is not initiated by us and is governed by Apple's own privacy policy. The other four tabs work with no network at all.</p>
+<h2>Your settings</h2>
+<p>Draught, safety margin, followed harbours, charted sounding, favourites: these stay on the device, in the app's private container. They are not synchronised and never leave the phone. Deleting the app deletes them.</p>
+<h2>Advertising and profiling</h2>
+<p>No advertising, no purchase, no third-party content. The app does not distinguish between its users and therefore has no means of profiling anyone.</p>
+<h2>Data sources</h2>
+<p>Tide heights are recomputed from tide gauge observations published by Shom under the French Open Licence (Licence Ouverte Etalab 2.0). Opening rules and times come from documents published by the harbour authorities, cited harbour by harbour inside the app. The map base layer is provided by Apple Maps.</p>
+<h2>Disclaimer</h2>
+<p>The app is an aid to planning, not a nautical document. It replaces neither charts, nor sailing directions, nor notices to mariners, and its use is the sole responsibility of the user.</p>
+<h2>Contact</h2>
+<p>For any question about this text, write to <a href="mailto:portsamaree.app@gmail.com">portsamaree.app@gmail.com</a>.</p>
+
+
+</div>
+
+<footer>
+  <p>Dernière mise à jour / Last updated: <strong>août 2026</strong> · Vincent Terrisse</p>
+  <p>Cette page est FABRIQUÉE depuis le texte de l'application, par
+     <code>Outils/confidentialite/publier.py</code>. Ne pas l'éditer à la main : la prochaine
+     publication écraserait la correction. / This page is GENERATED from the app's own text.</p>
+</footer>
+
+</main>
