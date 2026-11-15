@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102538">
+  <meta name="description" content="Ports à marée réunit les horaires d’accès et les marées des ports situés en France, en Belgique, aux Pays-Bas et dans les îles Anglo-Normandes.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ports à marée — Savoir quand on passe">
+  <meta property="og:description" content="Horaires d’accès et marées des ports en France, en Belgique, aux Pays-Bas et dans les îles Anglo-Normandes.">
+  <meta property="og:url" content="https://portsamaree.github.io/app/">
+  <meta property="og:image" content="https://portsamaree.github.io/app/assets/partage.png">
+  <title>Ports à marée — Savoir quand on passe</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
+
+  <header class="topbar">
+    <a class="brand" href="#haut" aria-label="Ports à marée" data-fr-label="Ports à marée" data-en-label="Tidal Harbours">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 25h26l-5 7H13z"/><path d="M20 6v18M20 8 10 23h10M22 12l10 11H22"/><path d="M5 35c4-3 8 3 12 0s8 3 12 0 5 0 6 0"/></svg></span>
+      <span data-fr="Ports à marée" data-en="Tidal Harbours">Ports à marée</span>
+    </a>
+    <nav class="topnav" aria-label="Navigation principale" data-fr-label="Navigation principale" data-en-label="Main navigation">
+      <a href="#fonctions" data-fr="Fonctions" data-en="Features">Fonctions</a>
+      <a href="#pourquoi" data-fr="À bord" data-en="On board">À bord</a>
+      <a href="#telecharger" data-fr="Télécharger" data-en="Download">Télécharger</a>
+    </nav>
+    <button class="lang-switch" id="langue" type="button" aria-label="Switch to English">EN</button>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" id="haut">
+      <div class="hero-copy">
+        <p class="eyebrow" data-fr="L’app du passage à la marée" data-en="The tidal harbour companion">L’app du passage à la marée</p>
+        <h1 data-fr="Savoir quand<br>on passe." data-en="Know when<br>you can pass.">Savoir quand<br>on passe.</h1>
+        <p class="hero-lede" data-fr="Écluses, portes de bassin et seuils : retrouvez les horaires d’accès et les marées des ports situés en France, en Belgique, aux Pays-Bas et dans les îles Anglo-Normandes." data-en="Lock, gate and sill access times, plus local tides for harbours in France, Belgium, the Netherlands and the Channel Islands — all together in English.">Écluses, portes de bassin et seuils : retrouvez les horaires d’accès et les marées des ports situés en France, en Belgique, aux Pays-Bas et dans les îles Anglo-Normandes.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="https://apps.apple.com/app/id6799664370" target="_blank" rel="noopener" data-fr="App Store" data-en="App Store">App Store <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://play.google.com/store/apps/details?id=fr.portsamaree" target="_blank" rel="noopener" data-fr="Google Play" data-en="Google Play">Google Play <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="platform-note" data-fr="iPhone · Apple Watch · Android · Wear OS" data-en="iPhone · Apple Watch · Android · Wear OS">iPhone · Apple Watch · Android · Wear OS</p>
+        <p class="coverage-note" data-fr="Ports en France · en Belgique · aux Pays-Bas · dans les îles Anglo-Normandes" data-en="Harbours in France · Belgium · the Netherlands · the Channel Islands">Ports en France · en Belgique · aux Pays-Bas · dans les îles Anglo-Normandes</p>
+      </div>
+      <div class="hero-visual" aria-label="Aperçu de l’application" data-fr-label="Aperçu de l’application" data-en-label="App preview">
+        <div class="water-orbit orbit-one"></div><div class="water-orbit orbit-two"></div>
+        <div class="phone-frame">
+          <img class="phone-shot" src="assets/ports-fr.png" data-fr-src="assets/ports-fr.png" data-en-src="assets/ports-en.png" data-fr-alt="Écran Ports à marée : horaires d’accès de plusieurs ports" data-en-alt="Tidal Harbours screen: access times for several harbours" alt="Écran Ports à marée : horaires d’accès de plusieurs ports" fetchpriority="high">
+        </div>
+        <div class="floating-note" aria-hidden="true"><span class="status-dot"></span><span data-fr="Créneau d’accès" data-en="Access window">Créneau d’accès</span><strong data-fr="OUVERT" data-en="OPEN">OUVERT</strong></div>
+        <svg class="hero-wave" viewBox="0 0 560 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 55 C55 10 95 96 150 55 S245 14 300 55 395 96 450 55 510 15 560 50"/></svg>
+      </div>
+      <div class="hero-bottom" aria-hidden="true"><span data-fr="La mer donne le rythme." data-en="The tide sets the rhythm.">La mer donne le rythme.</span><span class="bottom-line"></span></div>
+    </section>
+
+    <section class="intro section-wrap" id="fonctions">
+      <p class="eyebrow eyebrow-dark" data-fr="Une question simple, une réponse utile" data-en="One simple question, a useful answer">Une question simple, une réponse utile</p>
+      <h2 data-fr="La marée ne suffit pas.<br>Il faut connaître le passage." data-en="Tide times are only part<br>of the passage.">La marée ne suffit pas.<br>Il faut connaître le passage.</h2>
+      <p class="intro-copy" data-fr="L’app rapproche la marée des horaires et règles publiés par les ports de France, de Belgique, des Pays-Bas et des îles Anglo-Normandes. Disponible aussi en anglais, elle rassemble ces informations au même endroit, sans avoir à chercher sur les sites portuaires." data-en="Tidal Harbours brings local tides, published opening times and access rules together for France, Belgium, the Netherlands and the Channel Islands. Available in English, it saves you searching across local harbour websites.">L’app rapproche la marée des horaires et règles publiés par les ports de France, de Belgique, des Pays-Bas et des îles Anglo-Normandes. Disponible aussi en anglais, elle rassemble ces informations au même endroit, sans avoir à chercher sur les sites portuaires.</p>
+    </section>
+
+    <section class="story section-wrap" id="gain-de-temps" aria-labelledby="story-title">
+      <div class="story-copy"><p class="eyebrow eyebrow-dark" data-fr="Le vrai gain de temps" data-en="The real time-saver">Le vrai gain de temps</p><h2 id="story-title" data-fr="Plus besoin de se souvenir où on l’a lu." data-en="No more hunting through port websites.">Plus besoin de se souvenir où on l’a lu.</h2><p data-fr="Pour un port à seuil, plus besoin de refaire les calculs : l’app établit le passage à partir de la marée du lieu. Pour une écluse, elle rassemble les horaires publiés — fini de fouiller le Web pour retrouver la bonne page. Et si on a oublié l’heure ou le jour, un coup d’œil au widget ou à la montre suffit." data-en="For harbours in France, Belgium, the Netherlands and the Channel Islands, Tidal Harbours brings published lock times and local tide information together in English. For a tidal sill, the app works out the access window from the local tide; for a lock, it keeps published opening times handy. When you forget the time or day, glance at the widget or watch.">Pour un port à seuil, plus besoin de refaire les calculs : l’app établit le passage à partir de la marée du lieu. Pour une écluse, elle rassemble les horaires publiés — fini de fouiller le Web pour retrouver la bonne page. Et si on a oublié l’heure ou le jour, un coup d’œil au widget ou à la montre suffit.</p></div>
+      <div class="story-player" data-story-player role="group" aria-label="Scène animée : chercher l’horaire d’une écluse sans réseau" data-fr-label="Scène animée : chercher l’horaire d’une écluse sans réseau" data-en-label="Animated scene: looking up a lock time without signal">
+        <div class="story-screen" aria-live="off">
+          <div class="story-frame is-active" data-story-frame="0"><span class="story-scene-label" data-fr="À bord" data-en="On board">À bord</span><div class="chat-line chat-in"><b data-fr="On avait dit quelle heure pour Saint-Martin-de-Ré ?" data-en="What time did we say for Saint-Martin-de-Ré?">On avait dit quelle heure pour Saint-Martin-de-Ré ?</b></div><div class="chat-line chat-out"><b data-fr="17h15 ou 18h15 ? Je ne sais plus…" data-en="17:15 or 18:15? I can’t remember…">17h15 ou 18h15 ? Je ne sais plus…</b></div></div>
+          <div class="story-frame story-search" data-story-frame="1"><span class="story-scene-label" data-fr="Je cherche…" data-en="Let me look…">Je cherche…</span><div class="chat-line chat-out"><b data-fr="Je cherche…" data-en="I’m looking…">Je cherche…</b></div><div class="search-page"><div class="browser-tabs"><i></i><i></i><i></i><span>›</span></div><div class="search-bar">⌕　<span data-fr="Saint-Martin horaires écluse" data-en="Saint-Martin lock opening times">Saint-Martin horaires écluse</span><i class="search-caret" aria-hidden="true"></i></div></div></div>
+          <div class="story-frame story-reply" data-story-frame="2"><span class="story-scene-label" data-fr="Toujours pas de réseau" data-en="Still no signal">Toujours pas de réseau</span><div class="chat-line chat-out"><b data-fr="Zut, j’ai plus de réseau." data-en="Oh no, I’ve lost signal.">Zut, j’ai plus de réseau.</b></div></div>
+          <div class="story-frame story-reply" data-story-frame="3"><span class="story-scene-label" data-fr="Et si le port était fermé ?" data-en="What if the harbour is closed?">Et si le port était fermé ?</span><div class="chat-line chat-out"><b data-fr="C’est pas possible… peut-être qu’on ne pourra passer que demain." data-en="This can’t be happening… maybe we won’t get through until tomorrow.">C’est pas possible… peut-être qu’on ne pourra passer que demain.</b></div></div>
+          <div class="story-frame story-app-final" data-story-frame="4"><div class="story-outro-copy"><span class="story-scene-label" data-fr="La prochaine fois…" data-en="Next time…">La prochaine fois…</span><p data-fr="Si seulement ils avaient eu" data-en="If only they’d had">Si seulement ils avaient eu</p><strong data-fr="Ports à marée" data-en="Tidal Harbours">Ports à marée</strong></div><div class="story-phone"><img class="story-app-image" src="assets/ports-fr.png" data-fr-src="assets/ports-fr.png" data-en-src="assets/ports-en.png" data-fr-alt="Écran de l’application Ports à marée" data-en-alt="Tidal Harbours app screen" alt="Écran de l’application Ports à marée"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="try-it section-wrap" aria-labelledby="demo-title">
+      <div class="try-heading">
+        <p class="eyebrow eyebrow-dark" data-fr="Touchez. Faites défiler. Comprenez." data-en="Move the time. See what changes.">Touchez. Faites défiler. Comprenez.</p>
+        <h2 id="demo-title" data-fr="Essayez par vous-même." data-en="Try it for yourself.">Essayez par vous-même.</h2>
+        <p data-fr="Deux démonstrations interactives. Déplacez l’heure pour voir la fenêtre d’accès évoluer, puis suivez la marée sous la quille." data-en="Two interactive demos. Scrub the time to see the access window change, then follow the tide under the keel.">Deux démonstrations interactives. Déplacez l’heure pour voir la fenêtre d’accès évoluer, puis suivez la marée sous la quille.</p>
+      </div>
+
+      <article class="demo-card access-demo">
+        <div class="demo-copy">
+          <span class="demo-kicker" data-fr="01 · L’heure et le passage" data-en="01 · Time and access">01 · L’heure et le passage</span>
+          <h3 data-fr="Le créneau bouge avec l’heure." data-en="The access window changes with time.">Le créneau bouge avec l’heure.</h3>
+          <p data-fr="Faites glisser le curseur. Le repère avance dans la journée et l’état du passage se met à jour." data-en="Drag the slider. The time marker moves through the day and the access status updates.">Faites glisser le curseur. Le repère avance dans la journée et l’état du passage se met à jour.</p>
+        </div>
+        <div class="demo-device" aria-label="Démonstration dans l’écran Ports de l’application">
+          <div class="phone-screen">
+            <div class="phone-dynamic-island" aria-hidden="true"></div>
+            <div class="phone-statusline"><span>18:30</span><span class="phone-signal" aria-hidden="true">▮ ▮ ▰</span></div>
+            <div class="app-ports-header"><strong data-fr="Ports à marée" data-en="Tidal Harbours">Ports à marée</strong><div><small data-fr="Mer. 12 août ·" data-en="Wed, Aug 12 ·">Mer. 12 août ·</small><b data-access-time>18h30</b></div></div>
+            <div class="phone-tide-band"><div><small data-fr="MARÉE · Saint-Malo" data-en="TIDE · Saint-Malo">MARÉE · Saint-Malo</small><strong data-fr="PM 07h47 · 20h03" data-en="HW 07:47 · 20:03">PM 07h47 · 20h03</strong></div><svg viewBox="0 0 140 32" aria-hidden="true"><path d="M0 18 C12 18 12 4 25 4 S38 28 51 28 64 5 77 5 90 26 103 26 116 8 140 8"/></svg><div class="tide-coeff"><small data-fr="coef. 88 · 94" data-en="coeff. 88 · 94">coef. 88 · 94</small><b data-tide-now>10,78 m</b></div></div>
+            <div class="app-month" data-fr="AOÛT" data-en="AUGUST">AOÛT</div>
+            <div class="app-day-wheel" aria-hidden="true"><span data-fr="DIM<br><b>9</b>" data-en="SUN<br><b>9</b>">DIM<br><b>9</b></span><span data-fr="LUN<br><b>10</b>" data-en="MON<br><b>10</b>">LUN<br><b>10</b></span><span data-fr="MAR<br><b>11</b>" data-en="TUE<br><b>11</b>">MAR<br><b>11</b></span><span class="wheel-picked" data-fr="MER<br><b>12</b>" data-en="WED<br><b>12</b>">MER<br><b>12</b></span><span data-fr="JEU<br><b>13</b>" data-en="THU<br><b>13</b>">JEU<br><b>13</b></span><span data-fr="VEN<br><b>14</b>" data-en="FRI<br><b>14</b>">VEN<br><b>14</b></span><span data-fr="SAM<br><b>15</b>" data-en="SAT<br><b>15</b>">SAM<br><b>15</b></span></div>
+            <div class="app-time-wheel"><span>17h30</span><span>18h00</span><output data-access-output>18h30</output><span>19h00</span><span>19h30</span><input id="heure-acces" class="time-slider access-slider" type="range" min="0" max="1435" step="5" value="1110" aria-label="Faire défiler l’heure de minuit à 23 h 55"></div>
+            <div class="demo-interface access-interface" data-demo="access">
+              <article class="app-port-card">
+                <div class="app-port-heading"><div><h4>Saint-Malo · Bassin Vauban</h4><small data-fr="Écluse du Naye · intra-muros" data-en="Naye lock · inside harbour">Écluse du Naye · intra-muros</small></div><span class="access-status status-open" data-access-status aria-live="polite">OUVERT</span></div>
+                <div class="access-track" aria-label="Fenêtres d’accès de 5 h 14 à 10 h 14 et de 17 h 31 à 22 h 31" data-fr-label="Fenêtres d’accès de 5 h 14 à 10 h 14 et de 17 h 31 à 22 h 31" data-en-label="Access windows from 5:14 to 10:14 and 17:31 to 22:31">
+                  <div class="access-track-base"></div><div class="access-window access-window-morning"></div><div class="access-window access-window-evening"></div><div class="access-cursor" data-access-cursor></div>
+                  <span class="track-time track-midnight">00h00</span><span class="track-time track-six">06h00</span><span class="track-time track-noon">12h00</span><span class="track-time track-eighteen">18h00</span><span class="track-time track-midnight-end">24h00</span>
+                </div>
+                <div class="app-window-list"><p><i></i><b>05h14 → 10h14</b><small data-fr="horaire publié" data-en="published schedule">horaire publié</small></p><p><i></i><b>17h31 → 22h31</b><small data-fr="horaire publié" data-en="published schedule">horaire publié</small></p></div>
+                <p class="access-result" data-access-result aria-live="polite">Franchissable jusqu’à 22h31</p>
+              </article>
+            </div>
+            <div class="phone-tabs" aria-hidden="true"><span class="tab-selected"><b>♧</b><small data-fr="Ports" data-en="Harbours">Ports</small></span><span><b>▤</b><small data-fr="Sous quille" data-en="Under keel">Sous quille</small></span><span><b>◧</b><small data-fr="Carte" data-en="Chart">Carte</small></span><span><b>≋</b><small data-fr="Marées" data-en="Tides">Marées</small></span><span><b>⚙</b><small data-fr="Réglages" data-en="Settings">Réglages</small></span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="demo-card keel-demo">
+        <div class="demo-copy">
+          <span class="demo-kicker" data-fr="02 · La hauteur sous quille" data-en="02 · Water under the keel">02 · La hauteur sous quille</span>
+          <h3 data-fr="Le bateau touche. La marée monte. Il repart." data-en="The boat grounds. The tide rises. It floats again.">Le bateau touche. La marée monte. Il repart.</h3>
+          <p data-fr="L’app croise la marée du lieu avec la sonde choisie et le tirant d’eau de votre bateau. À basse mer, la quille touche ; à la remontée, vous voyez quand il flotte de nouveau." data-en="The app combines the local tide with the selected depth and your boat’s draught. At low water the keel grounds; as the tide rises, see when it floats again.">L’app croise la marée du lieu avec la sonde choisie et le tirant d’eau de votre bateau. À basse mer, la quille touche ; à la remontée, vous voyez quand il flotte de nouveau.</p>
+        </div>
+        <div class="demo-device" aria-label="Démonstration dans l’écran Sous quille de l’application">
+          <div class="phone-screen">
+            <div class="phone-dynamic-island" aria-hidden="true"></div>
+            <div class="phone-statusline"><span>18:30</span><span class="phone-signal" aria-hidden="true">▮ ▮ ▰</span></div>
+            <div class="phone-reference-header"><span><small data-fr="MARÉE CALCULÉE SUR" data-en="TIDE CALCULATED FOR">MARÉE CALCULÉE SUR</small><strong data-fr="La Rochelle-La Pallice" data-en="La Rochelle-La Pallice">La Rochelle-La Pallice</strong></span><b>›</b></div>
+            <div class="app-moorings"><span data-fr="⚓ Mes mouillages" data-en="⚓ My saved places">⚓ Mes mouillages</span><b>3　›</b></div>
+            <div class="app-time-wheel keel-time-wheel"><span>17h30</span><span>18h00</span><output data-keel-output>00h00</output><span>19h00</span><span>19h30</span><input id="heure-quille" class="time-slider keel-slider" type="range" min="0" max="24" step="0.25" value="0" aria-label="Faire défiler le cycle de marée de 0 à 24 heures"></div>
+            <div class="demo-interface keel-interface" data-demo="keel">
+              <div class="depth-selector"><div class="depth-selector-label"><span data-fr="SONDE RELEVÉE SUR LA CARTE" data-en="CHARTED DEPTH">SONDE RELEVÉE SUR LA CARTE</span><b data-sounding-value>1,20 m</b></div><div class="app-depth-wheel"><span>1,00</span><span>1,10</span><output>1,20</output><span>1,30</span><span>1,40</span><input id="sonde-quille" class="time-slider depth-slider" type="range" min="60" max="240" step="10" value="120" aria-label="Ajuster la sonde de 0,60 à 2,40 mètres"></div></div>
+              <button type="button" class="sound-button" aria-expanded="false" aria-controls="sound-note" data-fr="J’ai sondé sur place" data-en="I measured the depth here">J’ai sondé sur place</button>
+              <p id="sound-note" class="sound-note" hidden data-fr="Dans l’app, ce bouton ouvre la saisie d’un relevé à l’heure de la mesure. Le calcul le rapporte ensuite au zéro des cartes." data-en="In the app, this opens a sounding entry for the time of measurement. The app then relates it to chart datum.">Dans l’app, ce bouton ouvre la saisie d’un relevé à l’heure de la mesure. Le calcul le rapporte ensuite au zéro des cartes.</p>
+              <div class="keel-scene" role="img" aria-label="Animation montrant un bateau échoué à marée basse et à flot quand la marée monte">
+                <svg class="keel-svg" viewBox="0 0 500 250" preserveAspectRatio="none" aria-hidden="true">
+                  <defs><linearGradient id="sea-gradient" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#72c2d2" stop-opacity=".55"/><stop offset="1" stop-color="#2e86ab" stop-opacity=".3"/></linearGradient></defs>
+                  <path class="water-fill" data-water-fill d="M0 180 Q60 174 125 180 T250 180 T375 180 T500 180 L500 218 L0 218 Z"/>
+                  <path class="waterline" data-waterline d="M0 180 Q60 174 125 180 T250 180 T375 180 T500 180"/>
+                  <path class="bed" d="M0 220 Q70 213 130 219 T260 218 T390 214 T500 219 L500 250 L0 250 Z"/>
+                  <path class="bed-line" d="M0 218 Q70 211 130 217 T260 216 T390 212 T500 217"/>
+                  <g class="app-boat state-grounded" data-boat transform="translate(0 158) rotate(5 250 60)">
+                    <path class="boat-hull" d="M205 0 H295 L289.6 12 Q284.2 44.4 254.05 60 H245.95 Q215.8 44.4 210.4 12 Z"/>
+                  </g>
+                  <line class="depth-line" data-depth-line x1="390" x2="390" y1="180" y2="218"/>
+                  <text class="depth-label" data-depth-label x="397" y="198">1,20 m</text>
+                </svg>
+              <span class="water-label" data-water-label>Marée +0,00 m</span>
+              <span class="boat-state state-grounded" data-boat-state aria-live="polite">ÉCHOUÉ</span>
+              </div>
+              <div class="keel-readout"><span data-keel-clearance>Manque 0,30 m pour flotter</span><strong data-tide-height>Marée +0,00 m</strong></div>
+              <div class="tide-curve-wrap"><svg class="tide-curve" viewBox="0 0 500 120" preserveAspectRatio="none" aria-label="Courbe de marée sur 24 heures"><path class="curve-guide" d="M0 100H500"/><path class="curve-line" data-tide-curve d="M0 100 C70 100 70 22 125 22 S180 100 250 100 320 22 375 22 430 100 500 100"/><circle class="curve-point" data-curve-point cx="0" cy="100" r="6"/></svg></div>
+              <p class="demo-disclaimer" data-fr="Exemple simplifié. Le résultat dépend du lieu, de la sonde et du tirant d’eau renseignés." data-en="Simplified example. Results depend on the location, depth and draught entered.">Exemple simplifié. Le résultat dépend du lieu, de la sonde et du tirant d’eau renseignés.</p>
+            </div>
+            <div class="phone-tabs" aria-hidden="true"><span><b>⛵</b><small data-fr="Ports" data-en="Harbours">Ports</small></span><span class="tab-selected"><b>⌗</b><small data-fr="Sous quille" data-en="Under keel">Sous quille</small></span><span><b>◫</b><small data-fr="Carte" data-en="Chart">Carte</small></span><span><b>≋</b><small data-fr="Marées" data-en="Tides">Marées</small></span><span><b>⚙</b><small data-fr="Réglages" data-en="Settings">Réglages</small></span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="feature-grid section-wrap" aria-label="Fonctions de l’application" data-fr-label="Fonctions de l’application" data-en-label="App features">
+      <article class="feature-card feature-large reveal">
+        <div class="feature-copy"><span class="feature-number">01</span><h3 data-fr="La marée du lieu et le seuil" data-en="The local tide and the sill">La marée du lieu et le seuil</h3><p data-fr="Pour un port à seuil ou un port d’échouage, l’accès est calculé avec la marée de sa référence locale et la cote du seuil ou la règle connue du port. Sous quille, ajoutez la sonde de l’endroit, le tirant d’eau et votre marge de sécurité : vous voyez quand la quille touche et quand elle se dégage." data-en="For a sill harbour or drying harbour, access is calculated from its local tide reference and the sill depth or known harbour rule. Under keel, add the spot’s depth, your boat’s draught and safety margin to see when the keel touches and when it clears.">Pour un port à seuil ou un port d’échouage, l’accès est calculé avec la marée de sa référence locale et la cote du seuil ou la règle connue du port. Sous quille, ajoutez la sonde de l’endroit, le tirant d’eau et votre marge de sécurité : vous voyez quand la quille touche et quand elle se dégage.</p></div>
+        <figure class="shot-card"><img src="assets/ports-fr.png" data-fr-src="assets/ports-fr.png" data-en-src="assets/ports-en.png" alt="Liste de ports et créneaux d’accès"><figcaption data-fr="Les heures, port par port" data-en="Times, harbour by harbour">Les heures, port par port</figcaption></figure>
+      </article>
+      <article class="feature-card reveal">
+        <figure class="shot-card"><img src="assets/sous-quille-fr.png" data-fr-src="assets/sous-quille-fr.png" data-en-src="assets/sous-keel-en.png" alt="Calcul de la hauteur d’eau sous la quille"><figcaption data-fr="Votre tirant, votre marge" data-en="Your draught, your margin">Votre tirant, votre marge</figcaption></figure>
+        <div class="feature-copy"><span class="feature-number">02</span><h3 data-fr="De l’eau sous la quille" data-en="Water under the keel">De l’eau sous la quille</h3><p data-fr="Renseignez le tirant d’eau, la marge de sécurité et une sonde relevée sur la carte ou sur place. Voyez la hauteur d’eau et l’évolution sur 48 heures." data-en="Set your draught, safety margin and a charted or measured depth. See the available water and how it changes over the next 48 hours.">Renseignez le tirant d’eau, la marge de sécurité et une sonde relevée sur la carte ou sur place. Voyez la hauteur d’eau et l’évolution sur 48 heures.</p></div>
+      </article>
+      <article class="feature-card feature-wide reveal">
+        <div class="feature-copy"><span class="feature-number">03</span><h3 data-fr="La marée à l’heure choisie" data-en="The tide at your chosen time">La marée à l’heure choisie</h3><p data-fr="Faites défiler la journée et les jours à venir. Les hauteurs, les pleines et basses mers et la courbe vous aident à lire la fenêtre de passage." data-en="Move through the day and the days ahead. Heights, high and low waters, and the tide curve help you understand the access window.">Faites défiler la journée et les jours à venir. Les hauteurs, les pleines et basses mers et la courbe vous aident à lire la fenêtre de passage.</p></div>
+        <figure class="shot-card"><img src="assets/marees-fr.png" data-fr-src="assets/marees-fr.png" data-en-src="assets/tides-en.png" alt="Annuaire des marées et créneaux"><figcaption data-fr="Marées et créneaux ensemble" data-en="Tides and access together">Marées et créneaux ensemble</figcaption></figure>
+      </article>
+      <article class="feature-card feature-saved reveal">
+        <div class="feature-copy"><span class="feature-number">04</span><h3 data-fr="Gardez vos lieux d’échouage" data-en="Save your drying-out spots">Gardez vos lieux d’échouage</h3><p data-fr="Enregistrez vos mouillages et vos coins de port à sec. Pour chaque endroit, choisissez ou modifiez la sonde lue sur la carte, ou saisissez un relevé fait sur place. Retrouvez ensuite ce lieu et ses heures de flottaison dans l’app." data-en="Save your anchorages and drying-out spots. For each place, set or adjust the charted depth, or enter a sounding you took on site. Find that place and its refloating times in the app later.">Enregistrez vos mouillages et vos coins de port à sec. Pour chaque endroit, choisissez ou modifiez la sonde lue sur la carte, ou saisissez un relevé fait sur place. Retrouvez ensuite ce lieu et ses heures de flottaison dans l’app.</p></div>
+        <figure class="shot-card"><img src="assets/mouillages-fr.png" data-fr-src="assets/mouillages-fr.png" data-en-src="assets/mouillages-en.png" data-fr-alt="Liste de mouillages enregistrés dans l’application" data-en-alt="List of saved anchorages in the app" alt="Liste de mouillages enregistrés dans l’application"><figcaption data-fr="Vos endroits, vos sondes" data-en="Your saved places and depths">Vos endroits, vos sondes</figcaption></figure>
+      </article>
+    </section>
+
+    <section class="wearable section-wrap" aria-labelledby="wearable-title">
+      <div class="wearable-copy"><p class="eyebrow eyebrow-dark" data-fr="Toujours à portée de main" data-en="Always within reach">Toujours à portée de main</p><h2 id="wearable-title" data-fr="Un regard suffit." data-en="A glance is enough.">Un regard suffit.</h2><p data-fr="Le widget affiche le prochain passage du port choisi sur l’écran d’accueil. Sur Apple Watch, retrouvez vos ports et leurs prochaines fenêtres au poignet : pratique quand on prépare les amarres ou qu’on est déjà sur le pont." data-en="The widget puts the next passage for your chosen harbour on your home screen. On Apple Watch, see your harbours and their next access windows at a glance, while preparing lines or already on deck.">Le widget affiche le prochain passage du port choisi sur l’écran d’accueil. Sur Apple Watch, retrouvez vos ports et leurs prochaines fenêtres au poignet : pratique quand on prépare les amarres ou qu’on est déjà sur le pont.</p><p class="wearable-note" data-fr="Un widget par port suivi ; plusieurs widgets peuvent cohabiter." data-en="One widget per followed harbour; you can add more than one.">Un widget par port suivi ; plusieurs widgets peuvent cohabiter.</p></div>
+      <figure class="wearable-visual"><img src="assets/widget-montre-fr.png" data-fr-src="assets/widget-montre-fr.png" data-en-src="assets/widget-montre-en.png" data-fr-alt="Widget Ports à marée sur l’écran d’accueil, à côté de l’écran Apple Watch montrant les créneaux de Paimpol" data-en-alt="Tidal Harbours widget beside the Apple Watch screen with Paimpol access windows" alt="Widget Ports à marée sur l’écran d’accueil, à côté de l’écran Apple Watch montrant les créneaux de Paimpol"><figcaption data-fr="Le prochain créneau sur l’iPhone et la montre" data-en="The next access window on iPhone and Apple Watch">Le prochain créneau sur l’iPhone et la montre</figcaption></figure>
+    </section>
+
+    <section class="principles" id="pourquoi">
+      <div class="principles-inner section-wrap">
+        <div class="principles-heading"><p class="eyebrow" data-fr="Pensée pour le bord" data-en="Made for life aboard">Pensée pour le bord</p><h2 data-fr="Claire à terre.<br>Utile en mer." data-en="Clear ashore.<br>Useful at sea.">Claire à terre.<br>Utile en mer.</h2></div>
+        <div class="principle-list">
+          <article><span class="principle-icon">~</span><div><h3 data-fr="Des marées aussi précises que possible" data-en="Tide predictions, as precise as possible">Des marées aussi précises que possible</h3><p data-fr="Calcul à bord sur 145 ondes harmoniques, corrections nodales comprises. Les courbes sont comparées aux prédictions officielles du Shom, port par port. La météo peut modifier la mer observée." data-en="Calculated on your device from 145 harmonic constituents, with nodal corrections. Curves are checked port by port against official Shom predictions. Weather can still change observed sea levels.">Calcul à bord sur 145 ondes harmoniques, corrections nodales comprises. Les courbes sont comparées aux prédictions officielles du Shom, port par port. La météo peut modifier la mer observée.</p></div></article>
+          <article><span class="principle-icon">↗</span><div><h3 data-fr="Les sources restent visibles" data-en="Sources stay visible">Les sources restent visibles</h3><p data-fr="Chaque fiche présente l’ouvrage, sa règle connue, la référence de marée et ses réserves." data-en="Each harbour page shows the structure, its known rule, the tide reference and any caveats.">Chaque fiche présente l’ouvrage, sa règle connue, la référence de marée et ses réserves.</p></div></article>
+          <article><span class="principle-icon">⌚</span><div><h3 data-fr="Le prochain passage au poignet" data-en="The next window at a glance">Le prochain passage au poignet</h3><p data-fr="Widgets et montres affichent l’accès du port suivi sans rouvrir toute l’app." data-en="Widgets and watches show the access window for your followed harbour.">Widgets et montres affichent l’accès du port suivi sans rouvrir toute l’app.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="download section-wrap" id="telecharger">
+      <div class="download-card reveal">
+        <div class="download-wave" aria-hidden="true"></div>
+        <p class="eyebrow eyebrow-dark" data-fr="À vous de prendre le large" data-en="Ready when you are">À vous de prendre le large</p>
+        <h2 data-fr="Votre prochain passage<br>commence ici." data-en="Your next passage<br>starts here.">Votre prochain passage<br>commence ici.</h2>
+        <p data-fr="Trois jours d’essai, puis un abonnement annuel au tarif affiché par votre boutique. Pas de compte à créer." data-en="Try it free for three days, then an annual subscription at the price shown in your store. No account to create.">Trois jours d’essai, puis un abonnement annuel au tarif affiché par votre boutique. Pas de compte à créer.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="https://apps.apple.com/app/id6799664370" target="_blank" rel="noopener">App Store <span aria-hidden="true">↗</span></a>
+          <a class="button button-store-outline" href="https://play.google.com/store/apps/details?id=fr.portsamaree" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="safety-note" data-fr="Une aide à la préparation. Vérifiez toujours les informations auprès du port et sur vos cartes nautiques." data-en="A planning aid. Always check information with the harbour and your nautical charts.">Une aide à la préparation. Vérifiez toujours les informations auprès du port et sur vos cartes nautiques.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#haut" aria-label="Ports à marée" data-fr-label="Ports à marée" data-en-label="Tidal Harbours"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 25h26l-5 7H13z"/><path d="M20 6v18M20 8 10 23h10M22 12l10 11H22"/><path d="M5 35c4-3 8 3 12 0s8 3 12 0 5 0 6 0"/></svg></span><span data-fr="Ports à marée" data-en="Tidal Harbours">Ports à marée</span></a>
+    <p data-fr="Application en français et en anglais · Ports en France, en Belgique, aux Pays-Bas et dans les îles Anglo-Normandes" data-en="Available in French and English · Harbours in France, Belgium, the Netherlands and the Channel Islands">Application en français et en anglais · Ports en France, en Belgique, aux Pays-Bas et dans les îles Anglo-Normandes</p>
+    <div class="footer-links"><a href="/" data-fr="Confidentialité iPhone" data-en="iPhone privacy">Confidentialité iPhone</a><a href="/android.html" data-fr="Android" data-en="Android privacy">Android</a><a href="mailto:portsamaree.app@gmail.com" data-fr="Contact" data-en="Contact">Contact</a></div>
+    <small>© <span id="annee"></span> Vincent Terrisse</small>
+  </footer>
+</body>
+</html>

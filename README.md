@@ -1,11 +1,12 @@
 # Ports à marée — pages publiques
 
-Ce dépôt ne sert qu'à **héberger** ce que l'application doit publier en ligne.
-Il ne contient pas le code de l'app.
+Ce dépôt héberge les pages publiques de Ports à marée. Il ne contient pas le code de l'app.
 
 | adresse | ce que c'est |
 |---|---|
 | `/` | politique de confidentialité, français et anglais |
+| `/app/` | page de présentation de l'application, français et anglais |
+| `/maj/v1/` | canal signé de mise à jour des horaires |
 
 ## ⚠️ La page de confidentialité ne s'édite pas ici
 
@@ -19,6 +20,10 @@ chercher les horaires d'écluses.
 
 Pour la mettre à jour : corriger le texte dans l'app, relancer le script,
 recopier le résultat ici.
+
+La vitrine `/app/` est une page distincte. La racine reste l'adresse de confidentialité déclarée
+dans les boutiques : ne pas remplacer `index.html` par la vitrine sans modifier au préalable les
+fiches des deux boutiques et l'application.
 
 ## `/maj/v1/` — le canal de mise à jour
 
