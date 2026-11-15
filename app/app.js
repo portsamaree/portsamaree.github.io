@@ -44,8 +44,8 @@
     languageButton.textContent = language === 'fr' ? 'EN' : 'FR';
     languageButton.setAttribute('aria-label', language === 'fr' ? 'Switch to English' : 'Passer en français');
     document.title = language === 'fr'
-      ? 'Ports à marée — Savoir quand on passe'
-      : 'Tidal Harbours — Know when you can pass';
+      ? 'Ports à marée : Savoir quand on passe'
+      : 'Tidal Harbours: Know when you can pass';
     document.querySelector('meta[name="description"]').content = language === 'fr'
       ? 'Ports à marée réunit les horaires d’accès et les marées des ports situés en France, en Belgique, aux Pays-Bas et dans les îles Anglo-Normandes.'
       : 'Tidal Harbours brings port access times and local tides together for France, Belgium, the Netherlands and the Channel Islands.';
